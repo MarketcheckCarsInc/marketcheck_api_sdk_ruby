@@ -1,0 +1,43 @@
+# Marketcheck_api_sdk::BaseListing
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**id** | **String** | Unique identifier representing a specific listing from the Marketcheck database | [optional] 
+**vin** | **String** | VIN for the car | [optional] 
+**heading** | **String** | Listing title as displayed on the source website | [optional] 
+**price** | **Integer** | Asking price for the car | [optional] 
+**miles** | **Integer** | Odometer reading / reported miles usage for the car | [optional] 
+**msrp** | **Integer** | MSRP for the car | [optional] 
+**data_source** | **String** | Data source of the listing | [optional] 
+**is_certified** | **Integer** | Certified car | [optional] 
+**vdp_url** | **String** | Vehicle Details Page url of the specific car | [optional] 
+**carfax_1_owner** | **BOOLEAN** | Flag to indicate whether listing is carfax_1_owner | [optional] 
+**carfax_clean_title** | **BOOLEAN** | Flag to indicate whether listing is carfax_clean_title | [optional] 
+**exterior_color** | **String** | Exterior color of the car | [optional] 
+**interior_color** | **String** | Interior color of the car | [optional] 
+**dom** | **Integer** | Days on Market value for the car based on current and historical listings found in the Marketcheck database for this car | [optional] 
+**dom_180** | **Integer** | Days on Market value for the car based on current and last 6 month listings found in the Marketcheck database for this car | [optional] 
+**dom_active** | **Integer** | Days on Market value for the car based on current and last 30 days listings found in the Marketcheck database for this car | [optional] 
+**seller_type** | **String** | Seller type for the car | [optional] 
+**inventory_type** | **String** | Inventory type of car | [optional] 
+**stock_no** | **String** | Stock number of car in dealers inventory | [optional] 
+**last_seen_at** | **Integer** | Listing last seen at (most recent) timestamp | [optional] 
+**last_seen_at_date** | **String** | Listing last seen at (most recent) date | [optional] 
+**scraped_at** | **Float** | Listing last seen at date timestamp | [optional] 
+**scraped_at_date** | **String** | Listing last seen at date | [optional] 
+**first_seen_at** | **Integer** | Listing first seen at first scraped timestamp | [optional] 
+**first_seen_at_date** | **String** | Listing first seen at first scraped date | [optional] 
+**ref_price** | **String** | Last reported price for the car. If the asking price value is not or is available then the last_price could perhaps be used. last_price is the price for the car listed on the source website as of last_price_dt date | [optional] 
+**ref_price_dt** | **Integer** | The date at which the last price was reported online. This is earlier to last_seen_date | [optional] 
+**ref_miles** | **String** | Last Odometer reading / reported miles usage for the car. If the asking miles value is not or is available then the last_miles could perhaps be used. last_miles is the miles for the car listed on the source website as of last_miles_dt date | [optional] 
+**ref_miles_dt** | **Integer** | The date at which the last miles was reported online. This is earlier to last_seen_date | [optional] 
+**source** | **String** | Source domain of the listing | [optional] 
+**financing_options** | [**Array&lt;ListingFinance&gt;**](ListingFinance.md) | Array of all finance offers for this listing | [optional] 
+**leasing_options** | [**Array&lt;ListingLease&gt;**](ListingLease.md) | Array of all finance offers for this listing | [optional] 
+**media** | [**ListingNestMedia**](ListingNestMedia.md) | Car Media Attributes - main photo link/url and photo links | [optional] 
+**dealer** | [**NestDealer**](NestDealer.md) | Dealer details of listing | [optional] 
+**build** | [**Build**](Build.md) |  | [optional] 
+**distance** | **Float** | Distance of the car&#39;s location from the specified user lcoation | [optional] 
+
+
